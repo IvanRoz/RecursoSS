@@ -2,8 +2,8 @@
 Recurso Didactico Servicio Social
 
 ```sh
+git clone https://github.com/IvanRoz/RecursoSS
 source venv/bin/activate
-git clone 
 black -l 110 . #linter
 pyton manage.py makemigrations && python manage.py migrate 
 python manage.py createsuperuser # create admin user

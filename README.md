@@ -1,5 +1,5 @@
-# Desarrollo de sistemas distribuidos
-Recurso Didactico Servicio Social
+# Recurso didactico de servicio social
+Recurso Didactico de la materia Desarrollo de Sistemas Distribuidos
 
 ```sh
 git clone https://github.com/IvanRoz/RecursoSS

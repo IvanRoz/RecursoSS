@@ -3,6 +3,7 @@ Recurso Didactico de la materia Desarrollo de Sistemas Distribuidos
 
 ```sh
 git clone https://github.com/IvanRoz/RecursoSS
+cd RecursoSS
 source venv/bin/activate
 black -l 110 . #linter
 pyton manage.py makemigrations && python manage.py migrate 

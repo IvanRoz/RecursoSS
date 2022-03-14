@@ -12,12 +12,16 @@
         <title>Aplicaciones para comunicaciones en red</title>
     </head>
     <body class="pt-5">
+
+
+        
     <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-md navbar-light">
+    <nav class="navbar fixed-top navbar-expand-md navbar-light navbar-right">
         <a class="navbar-brand text-uppercase" href="{% url 'main' %}">
             <img src="{% static 'main/ipn.png'%}" width="25" height="30" class="d-inline-block align-top" alt="">
            Aplicaciones para comunicaciones en red
         </a>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -48,13 +52,26 @@
                             {% endfor %}
                         </div>
                     </li>
+                     <li class="nav-item text-uppercase dropdown {% if url_name == 'unit' %}active font-weight-bold{% endif %}">
+                        <div class="collapse" id="navbarToggleExternalContent">
+                              <div class="bg-dark p-4">
+                                <h5 class="text-white h4">Collapsed content</h5>
+                                <span class="text-muted">Toggleable via the navbar brand.</span>
+                              </div>
+                        </div>
+                    </li>
                 {% endwith %}
             </ul>
         </div>
+
+
+
         <a class="navbar-brand d-none d-md-block" href="{% url 'main' %}">
             <img src="{% static 'main/escom.png'%}" width="50" height="30" class="d-inline-block align-top" alt="">
         </a>
     </nav>
+
+
     {% block content %}
     {% endblock %}
     </body>

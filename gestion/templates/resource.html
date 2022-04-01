@@ -10,9 +10,9 @@
         <div class="col col-md-11 p-3 mx-auto">
 
             <div class="bg-light p-4 rounded border border_acccent soft_accent">
-                <h2 id="objetivo">Recursos didácticos</h2>
+                <h2 id="objetivo">Contenidos</h2>
                 <p class="font-weight-bold">
-                	En esta sección podrá encontrar recursos didácticos para esta unidad.
+                	En esta sección podrá encontrar contenido y información referente a la unidad {{ this_unit.order }}.
                 </p>
                 <button class="btn btn-primary text-white" id="sidebarToggle">Menu lateral</button>
             </div>
@@ -23,25 +23,25 @@
                 <div class="row">
                 {% for item in resources %}
                     <div class="col col-md-6 mb-3">
-                    <div class="card">
-                        <div class="card-header softer_accent" id="heading_{{item.order}}">
-                            <button class="btn btn-link font-weight-bold" data-toggle="collapse" data-target="#collapse_{{item.order}}"
-                                aria-expanded="true" aria-controls="collapse_{{item.order}}">
-                                {{item.order_as_str}} {{item.name}}
-                            </button>
-                            {% if item.subtitle %}
-                                <h6 class="card-subtitle ml-3 text-muted">{{ item.subtitle }}</h6>
-                            {% endif %}
-                        </div>
+                        <div class="card">
+                            <div class="card-header softer_accent" id="heading_{{item.order}}">
+                                <button class="btn btn-link font-weight-bold" data-toggle="collapse" data-target="#collapse_{{item.order}}"
+                                    aria-expanded="true" aria-controls="collapse_{{item.order}}">
+                                     {{item.name}}
+                                </button>
+                                {% if item.subtitle %}
+                                    <h6 class="card-subtitle ml-3 text-muted">{{ item.subtitle }}</h6>
+                                {% endif %}
+                            </div>
 
-                        <div id="collapse_{{item.order}}" class="collapse multi-collapse" aria-labelledby="heading_{{item.order}}">
-                            <div class="card-body p-1">
-                                <div class="d-flex flex-column" id="internaldiv" style="text-align: left;">
-                                    {{item.contents | safe}}
+                            <div id="collapse_{{item.order}}" class="collapse multi-collapse" aria-labelledby="heading_{{item.order}}">
+                                <div class="card-body p-1">
+                                    <div class="d-flex flex-column" id="internaldiv" style="text-align: left;">
+                                        {{item.contents | safe}}
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     </div>
                 {% endfor %}
                 </div>

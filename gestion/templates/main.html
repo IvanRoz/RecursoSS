@@ -23,6 +23,10 @@
         <span class="navbar-toggler-icon"></span>
     </button>
 
+    <a class="navbar-brand text-uppercase" href="{% url 'main' %}">
+            <img src="{% static 'main/ipn.png'%}" width="35" height="40" class="d-inline-block align-top" alt="">
+    </a>
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto">
            <li class="nav-item">
@@ -45,6 +49,10 @@
             </li>
         </ul>
     </div>
+
+     <a class="navbar-brand d-none d-md-block" href="{% url 'main' %}">
+            <img src="{% static 'main/escom.png'%}" width="50" height="30" class="d-inline-block align-top" alt="">
+        </a>
 </nav>
 <div class="container-fluid">
     <div class="starter-template bg-white">

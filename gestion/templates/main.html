@@ -5,19 +5,19 @@
     <div class="d-flex row p-5 text-white bg-info" id="bienvenida" style="align-items: center;">
         <div class="p-3 col-sm">
             <h1 class="pb-4">Bienvenidos</h1>
-            <p class="pt-1">
-                Estimados estudiantes, se les extiende la más cordial bienvenida a este espacio,
-                donde podrán encontrar información relevante a la unidad de aprendizaje conocida como aplicaciones para comunicaciones en red. <br /><br />
+            <p>
 
-                Podrán consultar los contenidos de cada unidad en sus respectivas secciones en la barra de navegación
-                que se encuentra en la parte superior. Haga scroll hacia abajo para ver los puntos clave que conforman
-                esta unidad.
+                "Si crees totalmente en ti mismo, nada estará fuera de tus posibilidades" 
+                <br/>- Wayne Dyer <br/><br/>
+
+                Estimados estudiantes, bienvenidos a este recurso didactico donde podrán encontrar información de la unidad de aprendizaje conocida como aplicaciones para comunicaciones en red. <br /> 
+                Podrán consultar los contenidos de cada unidad en sus respectivas secciones en la barra de navegación o continuar bajando para ver los puntos clave que conforman esta unidad.
             </p>
         </div>
     </div>
 
 </div>
-<nav class="navbar navbar-dark bg-dark text-white sticky-top navbar-expand-lg" style="top: 56px;">
+<nav class="navbar navbar-dark bg-primary text-white sticky-top navbar-expand-lg" style="top: 56px;">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -25,6 +25,9 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto">
+           <li class="nav-item">
+                <h4><a class="nav-link " href="#" id="sidebarToggle">Menu lateral</a></h4>
+            </li>
             <li class="nav-item">
                 <h4><a class="nav-link" href="#metodologia">Metodología<span class="sr-only">(current)</span></a></h4>
             </li>
@@ -165,12 +168,17 @@
     </div>
 
 </div>
+
+<!--Divs que inician en base.html-->
+</div>    
+</div>
+
 {% endblock %}
 {% block extra_css%}
 <style>
     #bienvenida {
         height: 100%;
-        background: url("{% static 'main/fondo.jpg'%}") !important;
+        background: url("{% static 'main/fondo.jpeg'%}") !important;
         background-size: auto;
         background-position: bottom;
     }

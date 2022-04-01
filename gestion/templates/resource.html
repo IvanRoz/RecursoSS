@@ -1,8 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
-	<div style="padding-top: 7px;">
-        <div class="text-white text-center mx-auto p-2 bg-gradient border border-dark" style="background-color: {{ this_unit.header_color }};">
-			<h2 style="margin-bottom: 0"> Unidad {{ this_unit.order }}</h2>
+	<div style="padding-top: 0px;">
+
+        <div class="text-white text-center mx-auto p-2 bg-gradient " style="background-color: {{ this_unit.header_color }};">
+
+			<h2 style="margin-bottom: 0"> Unidad {{ this_unit.order }} {{ this_unit.name }}</h2>
         </div>
 
         <div class="col col-md-11 p-3 mx-auto">
@@ -12,6 +14,7 @@
                 <p class="font-weight-bold">
                 	En esta sección podrá encontrar recursos didácticos para esta unidad.
                 </p>
+                <button class="btn btn-primary text-white" id="sidebarToggle">Menu lateral</button>
             </div>
             <div class="p-2">
             </div>
@@ -45,6 +48,11 @@
             </div>
         </div>
     </div>
+
+<!--Divs que inician en base.html-->
+</div>
+</div>
+
 {% endblock %}
 {% block extra_css%}
 <style type="text/css">

@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
 	<div style="padding-top: 0px;">
 
@@ -8,9 +9,11 @@
         </div>
 
         <div class="col col-md-11 p-3 mx-auto">
-
+            <img src="{% static 'main/content.png'%}" width="170" height="170" class="d-inline-block align-top float-right" alt="">
             <div class="bg-light p-4 rounded border border_acccent soft_accent">
+
                 <h2 id="objetivo">Contenidos</h2>
+
                 <p class="font-weight-bold">
                 	En esta sección podrá encontrar contenido y información referente a la unidad {{ this_unit.order }}.
                 </p>

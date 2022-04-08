@@ -15,14 +15,14 @@
     <body class="pt-0">
 
        
-        <div class="d-flex toggled" id="wrapper">
+        <div class="d-flex" id="wrapper">
               
             <!-- Sidebar-->
             <div class="border-end bg-white" id="sidebar-wrapper">
                 <div class="sidebar-heading border-bottom bg-light">Aplicaciones para <br>comunicaciones<br>en red</div>
                 <div class="list-group list-group-flush">
 
-                    <a class="nav-link bg-primary text-white" href="{% url 'main' %}" id="" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link bg-primary text-white" href="{% url 'main' %}" id="otonInicio" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">
                             Inicio
                     </a>
                     {% with request.resolver_match.url_name as url_name %}
@@ -93,9 +93,12 @@
 </style>
 <script>
 
+    
+    
     $(document).ready(() => {
         // All images should be responsive
         $('#internaldiv img').attr('class', 'img-fluid rounded p-2'); 
+        document.body.classList.toggle('sb-sidenav-toggled');
     });
 
 window.addEventListener('DOMContentLoaded', event => {
@@ -111,6 +114,8 @@ window.addEventListener('DOMContentLoaded', event => {
     }
 
 });
+
+
 
 </script>
 

@@ -21,6 +21,31 @@
             </div>
             <div class="p-2">
             </div>
+
+            <div>
+                
+                    <div class="card mb-3">
+                        <div class="card-header softer_accent" id="heading_{{item.order}}">
+                                <button class="btn btn-link font-weight-bold" data-toggle="collapse" data-target="#collapse_{{item.order}}"
+                                    aria-expanded="true" aria-controls="collapse_{{item.order}}">
+                                    Introducción a la unidad {{ this_unit.order }} {{ this_unit.name }}
+                                </button>
+                                
+                                    <h6 class="card-subtitle ml-3 text-muted">Keywords: </h6>
+                                
+                        </div>
+
+                        <div id="collapse_{{item.order}}" class="collapse multi-collapse" aria-labelledby="heading_{{item.order}}">
+                            <div class="card-body p-4">
+                                <div class="d-flex flex-column justify-content-start" id="internaldiv">
+                                    Contenido
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+
             <!-- Contenido -->
             <div class="card-deck">
                 <div class="row">

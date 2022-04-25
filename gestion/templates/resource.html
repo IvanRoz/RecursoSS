@@ -21,7 +21,7 @@
             </div>
             <div class="p-2">
             </div>
-
+<!-- 
             <div>
                 
                     <div class="card mb-3">
@@ -31,20 +31,21 @@
                                     Introducción a la unidad {{ this_unit.order }} {{ this_unit.name }}
                                 </button>
                                 
-                                    <h6 class="card-subtitle ml-3 text-muted">Keywords: </h6>
+                                    <h6 class="card-subtitle ml-3 text-muted">Keywords: Modelo de capas, TCP, UDP, Cliente-servidor, Sockets, Serialización</h6>
                                 
                         </div>
 
                         <div id="collapse_{{item.order}}" class="collapse multi-collapse" aria-labelledby="heading_{{item.order}}">
-                            <div class="card-body p-4">
+                            <div class="card-body p-4 center">
                                 <div class="d-flex flex-column justify-content-start" id="internaldiv">
-                                    Contenido
+                                    La capa de transporte TCP/IP garantiza que los paquetes lleguen en secuencia y sin errores, al intercambiar La confirmación de la recepción de los datos y retransmitir los paquetes perdidos. Este tipo de comunicación se conoce como transmisión de punto a punto. Los protocolos de capa de transporte de este nivel son el Protocolo de control de transmisión (TCP) y el Protocolo de datagramas de usuario (UDP).
+                                    <img src="{% static 'main/modelo.jpg'%}" width="648" height="454" class="" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
                 
-            </div>
+            </div> -->
 
             <!-- Contenido -->
             <div class="card-deck">
@@ -79,7 +80,7 @@
 
 <!--Divs que inician en base.html-->
 </div>
-</div>
+
 
 {% endblock %}
 {% block extra_css%}

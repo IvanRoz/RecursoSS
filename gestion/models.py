@@ -74,7 +74,7 @@ class UnitResource(BaseUnit):
     )
     contents = models.TextField(help_text="Contenidos (HTML) para este recurso.", max_length=1000)
 
-    subtitle = models.TextField(max_length=1000, help_text="Subtítulo, opcional.", blank=True, null=True)
+    subtitle = models.TextField(max_length=9000, help_text="Subtítulo, opcional.", blank=True, null=True)
 
     order_as_str = models.CharField(
         max_length=10,

@@ -35,7 +35,7 @@
                             <div class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
                                     {% for unit in units %} 
 
-                                        <a class="dropdown-item text-white" 
+                                        <a class="dropdown-item text-white"  
                                         href="{% url 'resource' unit.order %}">{{unit.order}}.- {{unit.name}}</a>
 
                                         {% endfor %}
@@ -54,7 +54,6 @@
                     </div>
 
                     {% endwith %}
-
 
 
                 </div>
